@@ -1,5 +1,5 @@
 run:
-	bin/nodejs-package.js 10
+	node bin/brain-games.js
 
 deps-install:
 	npm ci

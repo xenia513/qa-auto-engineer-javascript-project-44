@@ -4,3 +4,6 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=xenia513_qa-auto-engineer-javascript-project-44&metric=bugs)](https://sonarcloud.io/summary/new_code?id=xenia513_qa-auto-engineer-javascript-project-44)
 
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=xenia513_qa-auto-engineer-javascript-project-44&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=xenia513_qa-auto-engineer-javascript-project-44)
+
+
+[![asciicast](https://asciinema.org/a/PVzhqnvKJr5JK5JCU2iSpAdoO.svg)](https://asciinema.org/a/PVzhqnvKJr5JK5JCU2iSpAdoO)

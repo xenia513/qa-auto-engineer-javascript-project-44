@@ -1,5 +1,7 @@
-run:
+run brain-games:
 	node bin/brain-games.js
+run brain-even:
+	node bin/brain-even.js
 
 deps-install:
 	npm ci

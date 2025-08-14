@@ -6,7 +6,7 @@ const play = (questions, correctAnswers) => {
     for (let i = 0; i < roundsCount; i += 1) {
         console.log(`Question: ${questions[i]}`)
         const answer = readlineSync.question('Your answer: ')
-        if (correctAnswers[i] !== answer.toLowerCase()) {
+        if (correctAnswers[i].toString() !== answer.toLowerCase()) {
             console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswers[i]}'.`)
             return false
         }

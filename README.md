@@ -10,3 +10,7 @@ Here are some console games
 ```brain-even```
 to play the even game:
 [![asciicast](https://asciinema.org/a/fwg0dioFzbwXYtlorYCrznsDe.svg)](https://asciinema.org/a/fwg0dioFzbwXYtlorYCrznsDe)
+
+```brain-even```
+to play the calculator game:
+[![asciicast](https://asciinema.org/a/WO97zK1MBSnTVoTkknSADfujw.svg)](https://asciinema.org/a/WO97zK1MBSnTVoTkknSADfujw)

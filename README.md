@@ -7,5 +7,6 @@
 
 Here are some console games
 
-Use 'brain-even' to play the even game:
-[![asciicast](https://asciinema.org/a/PVzhqnvKJr5JK5JCU2iSpAdoO.svg)](https://asciinema.org/a/PVzhqnvKJr5JK5JCU2iSpAdoO)
+```brain-even```
+to play the even game:
+[![asciicast](https://asciinema.org/a/fwg0dioFzbwXYtlorYCrznsDe.svg)](https://asciinema.org/a/fwg0dioFzbwXYtlorYCrznsDe)

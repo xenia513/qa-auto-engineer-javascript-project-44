@@ -16,7 +16,7 @@ to play the even game:
 [![asciicast](https://asciinema.org/a/fwg0dioFzbwXYtlorYCrznsDe.svg)](https://asciinema.org/a/fwg0dioFzbwXYtlorYCrznsDe)
 
 ```
-brain-even
+brain-calc
 ```
 
 to play the calculator game:

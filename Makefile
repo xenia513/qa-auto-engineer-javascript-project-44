@@ -7,6 +7,9 @@ run brain-even:
 run brain-even:
 	node bin/brain-calc.js
 
+run brain-gcd:
+	node bin/brain-gcd.js
+
 deps-install:
 	npm ci
 

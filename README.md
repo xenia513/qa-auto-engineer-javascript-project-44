@@ -7,13 +7,17 @@
 
 Here are some console games
 
-```brain-even```
+```
+brain-even
+```
 
 to play the even game:
 
 [![asciicast](https://asciinema.org/a/fwg0dioFzbwXYtlorYCrznsDe.svg)](https://asciinema.org/a/fwg0dioFzbwXYtlorYCrznsDe)
 
-```brain-even```
+```
+brain-even
+```
 
 to play the calculator game:
 

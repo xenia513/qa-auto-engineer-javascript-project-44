@@ -22,3 +22,11 @@ brain-calc
 to play the calculator game:
 
 [![asciicast](https://asciinema.org/a/WO97zK1MBSnTVoTkknSADfujw.svg)](https://asciinema.org/a/WO97zK1MBSnTVoTkknSADfujw)
+
+```
+brain-gcd
+```
+
+to play the gcd game:
+
+[![asciicast](https://asciinema.org/a/43tuIAJt5y4pevz3GesXgCR1h.svg)](https://asciinema.org/a/43tuIAJt5y4pevz3GesXgCR1h)

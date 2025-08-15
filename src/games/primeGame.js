@@ -7,7 +7,7 @@ const isPrime = (n) => { // функция-предикат вычисляет, 
     return false
   }
   else {
-    for (let i = 2; i < Math.sqrt(n); i += 1) {
+    for (let i = 3; i <= Math.sqrt(n); i += 1) {
       if (n % i === 0) {
         return false
       }

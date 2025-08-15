@@ -30,3 +30,11 @@ brain-gcd
 to play the gcd game:
 
 [![asciicast](https://asciinema.org/a/43tuIAJt5y4pevz3GesXgCR1h.svg)](https://asciinema.org/a/43tuIAJt5y4pevz3GesXgCR1h)
+```
+brain-progression
+```
+
+to play the progression game:
+
+[![asciicast](https://asciinema.org/a/Ara2MP76rM46DlKAbCOWg7ekT.svg)](https://asciinema.org/a/Ara2MP76rM46DlKAbCOWg7ekT)
+

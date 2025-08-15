@@ -13,6 +13,9 @@ run brain-gcd:
 run brain-progression:
 	node bin/brain-progression.js
 
+run brain-prime:
+	node bin/brain-prime.js
+
 deps-install:
 	npm ci
 

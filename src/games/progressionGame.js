@@ -6,7 +6,7 @@ const makeProgression = () => {
   const start = Math.ceil(Math.random() * 20) // случайный стартовый элемент прогрессии от 1 до 20
   const step = 1 + Math.ceil(Math.random() * 5) // случайный шаг прогрессии от 2 до 5
   const length = 5 + Math.round(Math.random() * 5) // случайная длина прогрессии от 5 до 10
-  const randomIndex = Math.round(Math.random() * length) // случайный индекс элемента, который будет скрыт
+  const randomIndex = Math.round(Math.random() * (length - 1)) // случайный индекс элемента, который будет скрыт
   const progression = []
   let hiddenElement
   for (let index = 0; index < length; index += 1) {

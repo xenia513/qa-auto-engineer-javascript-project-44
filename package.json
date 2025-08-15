@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/xenia513/qa-auto-engineer-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/xenia513/qa-auto-engineer-javascript-project-44/actions)",
   "homepage": "https://github.com/xenia513/qa-auto-engineer-javascript-project-44#readme",
-    "bin": {
+  "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
-    "eslint": "^9.33.0",
+    "eslint": "^8.57.1",
     "globals": "^16.3.0"
   }
 }

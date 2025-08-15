@@ -13,11 +13,11 @@ export default () => {
     questions.push(`${value1} ${operator} ${value2}`) // формируем выражение-вопрос
     switch (operator) { // вычисляем значение выражения в зависимости от выбранного оператора
       case '+': correctAnswers.push(value1 + value2)
-      break
+        break
       case '-': correctAnswers.push(value1 - value2)
-      break
+        break
       case '*': correctAnswers.push(value1 * value2)
-      break
+        break
     }
   }
   playGame(rules, questions, correctAnswers)

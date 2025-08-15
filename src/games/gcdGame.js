@@ -8,9 +8,9 @@ const gcd = (a, b) => { // функция вычисляет наибольши�
   }
   else {
     while (b !== 0) {
-    let newB = a % b
-    a = b
-    b = newB
+      let newB = a % b
+      a = b
+      b = newB
     }
   }
   return a

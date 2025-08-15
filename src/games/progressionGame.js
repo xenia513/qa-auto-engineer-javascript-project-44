@@ -1,5 +1,4 @@
-import playGame from '../index.js'
-import { roundsCount } from '../index.js'
+import playGame, { roundsCount } from '../index.js'
 
 const rules = 'What number is missing in the progression?'
 

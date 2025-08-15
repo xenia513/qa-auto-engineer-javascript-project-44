@@ -7,10 +7,26 @@
 
 Here are some console games
 
-```brain-even```
+```
+brain-even
+```
+
 to play the even game:
+
 [![asciicast](https://asciinema.org/a/fwg0dioFzbwXYtlorYCrznsDe.svg)](https://asciinema.org/a/fwg0dioFzbwXYtlorYCrznsDe)
 
-```brain-even```
+```
+brain-calc
+```
+
 to play the calculator game:
+
 [![asciicast](https://asciinema.org/a/WO97zK1MBSnTVoTkknSADfujw.svg)](https://asciinema.org/a/WO97zK1MBSnTVoTkknSADfujw)
+
+```
+brain-gcd
+```
+
+to play the gcd game:
+
+[![asciicast](https://asciinema.org/a/43tuIAJt5y4pevz3GesXgCR1h.svg)](https://asciinema.org/a/43tuIAJt5y4pevz3GesXgCR1h)

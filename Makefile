@@ -10,6 +10,9 @@ run brain-even:
 run brain-gcd:
 	node bin/brain-gcd.js
 
+run brain-progression:
+	node bin/brain-progression.js
+
 deps-install:
 	npm ci
 

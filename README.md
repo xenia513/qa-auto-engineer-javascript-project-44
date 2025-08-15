@@ -37,4 +37,10 @@ brain-progression
 to play the progression game:
 
 [![asciicast](https://asciinema.org/a/Ara2MP76rM46DlKAbCOWg7ekT.svg)](https://asciinema.org/a/Ara2MP76rM46DlKAbCOWg7ekT)
+```
+brain-prime
+```
 
+to play the prime game:
+
+[![asciicast](https://asciinema.org/a/iUNwepsXd2gsdsJiVkqCAs6UO.svg)](https://asciinema.org/a/iUNwepsXd2gsdsJiVkqCAs6UO)

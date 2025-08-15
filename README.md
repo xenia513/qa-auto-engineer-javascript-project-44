@@ -55,35 +55,35 @@ brain-games
 [![asciicast](https://asciinema.org/a/uZoUAF8V5brl6OH6b1peGsxY6.svg)](https://asciinema.org/a/uZoUAF8V5brl6OH6b1peGsxY6)
 
 ```sh
-# to play the even game enter:
+# to play the **Even number** game enter:
 brain-even
 ```
 
 [![asciicast](https://asciinema.org/a/fwg0dioFzbwXYtlorYCrznsDe.svg)](https://asciinema.org/a/fwg0dioFzbwXYtlorYCrznsDe)
 
 ```sh
-# to play the calculator game enter:
+# to play the **Calculator** game enter:
 brain-calc
 ```
 
 [![asciicast](https://asciinema.org/a/WO97zK1MBSnTVoTkknSADfujw.svg)](https://asciinema.org/a/WO97zK1MBSnTVoTkknSADfujw)
 
 ```sh
-# to play the gcd game enter:
+# to play the **The greatest common divisor** game enter:
 brain-gcd
 ```
 
 [![asciicast](https://asciinema.org/a/43tuIAJt5y4pevz3GesXgCR1h.svg)](https://asciinema.org/a/43tuIAJt5y4pevz3GesXgCR1h)
 
 ```sh
-# to play the progression game enter:
+# to play the **Progression** game enter:
 brain-progression
 ```
 
 [![asciicast](https://asciinema.org/a/Ara2MP76rM46DlKAbCOWg7ekT.svg)](https://asciinema.org/a/Ara2MP76rM46DlKAbCOWg7ekT)
 
 ```sh
-# to play the prime game enter:
+# to play the **Prime number** game enter:
 brain-prime
 ```
 

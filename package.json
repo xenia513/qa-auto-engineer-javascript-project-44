@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/xenia513/qa-auto-engineer-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/xenia513/qa-auto-engineer-javascript-project-44/actions)",
+  "description": "First hexlet aqa js project: Brain-games",
   "homepage": "https://github.com/xenia513/qa-auto-engineer-javascript-project-44#readme",
   "bin": {
     "brain-games": "bin/brain-games.js",

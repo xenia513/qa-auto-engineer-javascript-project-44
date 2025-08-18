@@ -1,6 +1,7 @@
-import playGame, { roundsCount } from '../index.js'
+import playGame from '../index.js'
+import getRandomNumber from '../utils.js'
 
-const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 const isPrime = (n) => { // функция-предикат вычисляет, является ли число простым
   if (n < 2) {
@@ -16,14 +17,13 @@ const isPrime = (n) => { // функция-предикат вычисляет, 
   return true
 }
 
-export default () => {
-  const questions = []
-  const correctAnswers = []
-  for (let i = 0; i < roundsCount; i += 1) {
-    const randomNubmer = Math.floor(Math.random() * 100)
-    questions.push(randomNubmer) // записываем случайное число как вопрос
-    const correctAnswer = isPrime(randomNubmer) ? 'yes' : 'no'// вычисляем, является ли число простым, и присваиваем значения
-    correctAnswers.push(correctAnswer) // записываем значение как верный ответ
-  }
-  playGame(rules, questions, correctAnswers)
+const getRound = () => {
+  const question = getRandomNumber(1, 100) // записываем случайное число как вопрос
+  const correctAnswer = isPrime(question) ? 'yes' : 'no'// вычисляем, является ли число простым, и присваиваем значения
+    return [question, correctAnswer] // возвращаем вопрос+ответ раунда
 }
+const runPrimeGame = () => { // запускаем игру с описанными правилами и механикой
+  playGame(rule, getRound)
+  }
+
+export default runPrimeGame

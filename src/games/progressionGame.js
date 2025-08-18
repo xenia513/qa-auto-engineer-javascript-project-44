@@ -1,12 +1,13 @@
-import playGame, { roundsCount } from '../index.js'
+import playGame from '../index.js'
+import getRandomNumber from '../utils.js'
 
-const rules = 'What number is missing in the progression?'
+const rule = 'What number is missing in the progression?'
 
 const makeProgression = () => {
-  const start = Math.ceil(Math.random() * 20) // случайный стартовый элемент прогрессии от 1 до 20
-  const step = 1 + Math.ceil(Math.random() * 5) // случайный шаг прогрессии от 2 до 5
-  const length = 5 + Math.round(Math.random() * 5) // случайная длина прогрессии от 5 до 10
-  const randomIndex = Math.round(Math.random() * (length - 1)) // случайный индекс элемента, который будет скрыт
+  const start = getRandomNumber(1, 20) // случайный стартовый элемент прогрессии от 1 до 20
+  const step = getRandomNumber(2, 10) // случайный шаг прогрессии от 2 до 10
+  const length = getRandomNumber(5, 10) // случайная длина прогрессии от 5 до 10
+  const randomIndex = getRandomNumber(0, length - 1) // случайный индекс элемента, который будет скрыт
   const progression = []
   let hiddenElement
   for (let index = 0; index < length; index += 1) {
@@ -17,20 +18,18 @@ const makeProgression = () => {
     }
     progression.push(currentElement) // записываем элементы в прогрессию
   }
-  return {
-    progression,
-    hiddenElement,
-  }
+  return [progression, hiddenElement]
 }
 
-export default () => {
-  const questions = []
-  const correctAnswers = []
-  for (let i = 0; i < roundsCount; i += 1) {
-    const result = makeProgression()
-    const question = result.progression.join(' ') // приводим прогрессию к строке
-    questions.push(question) // записываем регрессию как вопрос
-    correctAnswers.push(result.hiddenElement) // записываем скрытый элемент как верный ответ
-  }
-  playGame(rules, questions, correctAnswers)
+const getRound = () => {
+    const [progression, hiddenElement] = makeProgression()
+    const question = progression.join(' ') // приводим прогрессию к строке
+    const correctAnswer = hiddenElement.toString() // записываем скрытый элемент как верный ответ
+    return [question, correctAnswer] // возвращаем вопрос+ответ раунда
 }
+
+const runProgressionGame = () => { // запускаем игру с описанными правилами и механикой
+  playGame(rule, getRound)
+}
+
+export default runProgressionGame

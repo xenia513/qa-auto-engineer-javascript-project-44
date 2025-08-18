@@ -1,15 +1,23 @@
-import playGame, { roundsCount } from '../index.js'
+import playGame from '../index.js'
+import getRandomNumber from '../utils.js'
 
-const rules = 'Answer "yes" if the number is even, otherwise answer "no".'
+const rule = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-export default () => {
-  const questions = []
-  const correctAnswers = []
-  for (let i = 0; i < roundsCount; i += 1) {
-    const randomNubmer = Math.floor(Math.random() * 100)
-    questions.push(randomNubmer) // записываем случайное число как вопрос
-    const correctAnswer = randomNubmer % 2 === 0 ? 'yes' : 'no' // вычисляем, является ли число четным, и присваиваем значения
-    correctAnswers.push(correctAnswer) // записываем значение как верный ответ
+const isEven = (number) => { // функция вычисляет, является ли число четным
+  if (number % 2 === 0) {
+    return true
   }
-  playGame(rules, questions, correctAnswers)
+  return false
 }
+
+const getRound = () => {
+  const question = getRandomNumber(0, 100) // выбираем случайное число
+  const correctAnswer = isEven(question) ? 'yes' : 'no' // записываем правильный ответ
+  return [question, correctAnswer] // возвращаем вопрос+ответ раунда
+}
+
+const runEvenGame = () => { // запускаем игру с описанными правилами и механикой
+  playGame(rule, getRound)
+  }
+
+export default runEvenGame

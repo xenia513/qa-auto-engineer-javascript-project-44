@@ -22,10 +22,10 @@ const makeProgression = () => {
 }
 
 const getRound = () => {
-    const [progression, hiddenElement] = makeProgression()
-    const question = progression.join(' ') // приводим прогрессию к строке
-    const correctAnswer = hiddenElement.toString() // записываем скрытый элемент как верный ответ
-    return [question, correctAnswer] // возвращаем вопрос+ответ раунда
+  const [progression, hiddenElement] = makeProgression()
+  const question = progression.join(' ') // приводим прогрессию к строке
+  const correctAnswer = hiddenElement.toString() // записываем скрытый элемент как верный ответ
+  return [question, correctAnswer] // возвращаем вопрос+ответ раунда
 }
 
 const runProgressionGame = () => { // запускаем игру с описанными правилами и механикой

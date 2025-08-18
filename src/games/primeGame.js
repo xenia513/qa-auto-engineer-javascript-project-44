@@ -20,10 +20,10 @@ const isPrime = (n) => { // функция-предикат вычисляет, 
 const getRound = () => {
   const question = getRandomNumber(1, 100) // записываем случайное число как вопрос
   const correctAnswer = isPrime(question) ? 'yes' : 'no'// вычисляем, является ли число простым, и присваиваем значения
-    return [question, correctAnswer] // возвращаем вопрос+ответ раунда
+  return [question, correctAnswer] // возвращаем вопрос+ответ раунда
 }
 const runPrimeGame = () => { // запускаем игру с описанными правилами и механикой
   playGame(rule, getRound)
-  }
+}
 
 export default runPrimeGame

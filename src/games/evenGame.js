@@ -7,7 +7,7 @@ const isEven = (number) => { // функция вычисляет, являет�
   if (number % 2 === 0) {
     return true
   }
-  return false
+  else false
 }
 
 const getRound = () => {
@@ -18,6 +18,6 @@ const getRound = () => {
 
 const runEvenGame = () => { // запускаем игру с описанными правилами и механикой
   playGame(rule, getRound)
-  }
+}
 
 export default runEvenGame

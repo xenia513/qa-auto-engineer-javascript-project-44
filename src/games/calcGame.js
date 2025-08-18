@@ -18,7 +18,7 @@ const getRound = () => {
     case '*': correctAnswer = (value1 * value2).toString()
       break
   }
-    return [question, correctAnswer] // возвращаем вопрос+ответ раунда
+  return [question, correctAnswer] // возвращаем вопрос+ответ раунда
 }
 const runCalcGame = () => { // запускаем игру с описанными правилами и механикой
   playGame(rule, getRound)

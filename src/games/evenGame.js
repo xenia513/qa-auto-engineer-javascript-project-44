@@ -3,12 +3,7 @@ import getRandomNumber from '../utils.js'
 
 const rule = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-const isEven = (number) => { // функция вычисляет, является ли число четным
-  if (number % 2 === 0) {
-    return true
-  }
-  else false
-}
+const isEven = (number) => (number % 2 === 0) // функция вычисляет, является ли число четным
 
 const getRound = () => {
   const question = getRandomNumber(0, 100) // выбираем случайное число

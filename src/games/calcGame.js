@@ -1,27 +1,33 @@
-import playGame from '../index.js'
+import runGame from '../index.js'
 import getRandomNumber from '../utils.js'
 
 const rule = 'What is the result of the expression?'
-const operators = ['+', '-', '*'] // задаем операторы, которые будут использоваться в выражениях
+const operators = ['+', '-', '*']
+
+const calculate = (value1, value2, operator) => {
+  switch (operator) {
+    case '+': return value1 + value2
+      break
+    case '-': return value1 - value2
+      break
+    case '*': return value1 * value2
+      break
+    default:
+      return 'Неизвестный оператор'
+  }
+}
 
 const getRound = () => {
-  const value1 = getRandomNumber(0, 50) // задаем первый операнд
-  const value2 = getRandomNumber(0, 50) // задаем второй операнд
-  const operator = operators[getRandomNumber(0, operators.length - 1)] // выбираем случайный оператор
-  const question = `${value1} ${operator} ${value2}` // формируем выражение-вопрос
-  let correctAnswer = ''
-  switch (operator) { // вычисляем значение выражения в зависимости от выбранного оператора
-    case '+': correctAnswer = (value1 + value2).toString()
-      break
-    case '-': correctAnswer = (value1 - value2).toString()
-      break
-    case '*': correctAnswer = (value1 * value2).toString()
-      break
-  }
-  return [question, correctAnswer] // возвращаем вопрос+ответ раунда
+  const value1 = getRandomNumber(0, 50)
+  const value2 = getRandomNumber(0, 50)
+  const operator = operators[getRandomNumber(0, operators.length - 1)]
+  const question = `${value1} ${operator} ${value2}`
+  const correctAnswer = (calculate(value1, value2, operator)).toString()
+  return [question, correctAnswer]
 }
-const runCalcGame = () => { // запускаем игру с описанными правилами и механикой
-  playGame(rule, getRound)
+
+const runCalcGame = () => {
+  runGame(rule, getRound)
 }
 
 export default runCalcGame

@@ -1,18 +1,18 @@
-import playGame from '../index.js'
+import runGame from '../index.js'
 import getRandomNumber from '../utils.js'
 
 const rule = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-const isEven = number => number % 2 === 0 // функция-предикат вычисляет, является ли число четным
+const isEven = number => number % 2 === 0
 
 const getRound = () => {
-  const question = getRandomNumber(0, 100) // выбираем случайное число
-  const correctAnswer = isEven(question) ? 'yes' : 'no' // записываем правильный ответ
-  return [question, correctAnswer] // возвращаем вопрос+ответ раунда
+  const question = getRandomNumber(0, 100)
+  const correctAnswer = isEven(question) ? 'yes' : 'no'
+  return [question, correctAnswer]
 }
 
-const runEvenGame = () => { // запускаем игру с описанными правилами и механикой
-  playGame(rule, getRound)
+const runEvenGame = () => {
+  runGame(rule, getRound)
 }
 
 export default runEvenGame

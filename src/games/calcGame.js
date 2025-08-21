@@ -7,11 +7,8 @@ const operators = ['+', '-', '*']
 const calculate = (value1, value2, operator) => {
   switch (operator) {
     case '+': return value1 + value2
-      break
     case '-': return value1 - value2
-      break
     case '*': return value1 * value2
-      break
     default:
       return 'Неизвестный оператор'
   }

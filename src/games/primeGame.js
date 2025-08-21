@@ -9,10 +9,10 @@ const isPrime = (n) => {
   }
   const limit = Math.sqrt(n)
   for (let i = 2; i <= limit; i += 1) {
-      if (n % i === 0) {
-        return false
-      }
+    if (n % i === 0) {
+      return false
     }
+  }
   return true
 }
 

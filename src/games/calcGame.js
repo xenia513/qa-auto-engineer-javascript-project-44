@@ -10,7 +10,7 @@ const calculate = (value1, value2, operator) => {
     case '-': return value1 - value2
     case '*': return value1 * value2
     default:
-      return 'Неизвестный оператор'
+      throw new Error(`Unknown operator: '${operator}'`);
   }
 }
 
